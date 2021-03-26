@@ -8,15 +8,13 @@ import matplotlib.pyplot as plt
 # Creates the global empty dictionary that will hold the letters that appear and how many times they appear in the text file that the user selects
 data = {}
 
+
 # A function that makes every letter in the text file lowercase so that the uppercase and lowercase versions of the same letter will be counted as one single letter
-
-
 def lowerCase(letter):
     return letter.lower()
 
+
 # Function that is run when the "Open" button is clicked to allow the user to select a file
-
-
 def openFile():
 
     # Brings in the global 'data' variable so that we may use it here
@@ -56,8 +54,6 @@ def openFile():
     return data
 
 # A function that creates the histogram that visually displays the data in the 'data' dictionary
-
-
 def createHistogram():
     global data
 
